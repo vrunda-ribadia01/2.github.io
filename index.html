@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vidhyaguru Science School | Welcome</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f5f0ff 0%, #e6ddfa 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 30px 20px;
+        }
+
+        .header {
+            text-align: center;
+            background: white;
+            border-radius: 40px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            color: #4A2E7A;
+            font-size: 2.2rem;
+        }
+
+        .logo-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: block;
+            object-fit: cover;
+        }
+
+        .welcome-card {
+            background: white;
+            border-radius: 30px;
+            padding: 40px;
+            text-align: center;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+        }
+
+        .welcome-card h2 {
+            color: #4A2E7A;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+
+        .welcome-card h3 {
+            color: #6B5B95;
+            margin: 20px 0;
+            line-height: 1.8;
+            font-weight: normal;
+        }
+
+        .signature {
+            margin-top: 20px;
+            font-style: italic;
+            color: #4A2E7A;
+        }
+
+        .gallery-section {
+            background: white;
+            border-radius: 30px;
+            padding: 40px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+        }
+
+        .gallery-title {
+            text-align: center;
+            color: #4A2E7A;
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+        }
+
+        .gallery-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        .gallery-item {
+            width: 200px;
+            text-align: center;
+        }
+
+        .gallery-img {
+            width: 200px;
+            height: 150px;
+            border-radius: 20px;
+            object-fit: cover;
+            margin-bottom: 10px;
+            transition: transform 0.3s;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        }
+
+        .gallery-img:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-item p {
+            color: #4A2E7A;
+            font-weight: bold;
+            margin-top: 8px;
+        }
+
+        .facility-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin: 40px 0;
+        }
+
+        .facility-card {
+            background: white;
+            border-radius: 20px;
+            padding: 20px;
+            text-align: center;
+            width: 180px;
+            transition: 0.3s;
+        }
+
+        .facility-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .facility-img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        .facility-card p {
+            color: #4A2E7A;
+            font-weight: bold;
+        }
+
+        .director-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .director-card {
+            background: white;
+            border-radius: 25px;
+            padding: 25px;
+            text-align: center;
+            width: 250px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .director-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .director-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 15px;
+            display: block;
+            border: 3px solid #4A2E7A;
+        }
+
+        .director-card h3 {
+            color: #4A2E7A;
+            margin-bottom: 5px;
+        }
+
+        .director-card p {
+            color: #6B5B95;
+            font-weight: bold;
+        }
+
+        .btn-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 40px 0;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #4A2E7A;
+            color: white;
+            text-decoration: none;
+            padding: 14px 40px;
+            border-radius: 40px;
+            font-weight: bold;
+            transition: all 0.3s;
+            box-shadow: 0 5px 15px rgba(74,46,122,0.3);
+        }
+
+        .btn:hover {
+            background: #3a2362;
+            transform: scale(1.03);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #6B5B95;
+        }
+
+        hr {
+            margin: 20px 0;
+            border: 1px solid #d9cdf0;
+        }
+
+        .section-title {
+            text-align: center;
+            color: #4A2E7A;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://yt3.googleusercontent.com/JbY9eK0-eDhySj9-dw4vV7V6wPAbwQ1CzL-qdsTFplJny-tkiFivRQ-hNCEh4W1aJ968ArNhtw=s900-c-k-c0x00ffffff-no-rj?w=10&h=10&fit=crop"alt="School Logo" class="logo-img">
+            <h1>VIDHYAGURU SCIENCE SCHOOL</h1>
+        </div>
+
+        <div class="welcome-card">
+            <h2>📖 Welcome to Vidhyaguru Science School!</h2>
+            <h3>🏫 STD : 9-10 & 11-12 (SCIENCE STREAM)</h3>
+            <h3>It is my pleasure to lead this wonderful school. Together with our dedicated staff,<br> 
+            we are committed to providing a safe, nurturing environment where every child can learn, grow, and succeed.<br><br>
+            Explore our website to stay connected. I look forward to a great year ahead!</h3>
+            <div class="signature">
+                <h3>✨ Warm Regards</h3>
+                <h3>~ Mehul Dholakiya</h3>
+            </div>
+        </div>
+
+        <!-- School Gallery Section with Working Images -->
+        <div class="gallery-section">
+            <h2 class="gallery-title">📸 OUR SCHOOL GALLERY</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://th.bing.com/th/id/OIP.Obvdwdsib_aOP338dPfG8AHaE8?w=244&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3?w=200&h=150&fit=crop" alt="School Building" class="gallery-img">
+                    <p>🏫 School Building</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://th.bing.com/th/id/OIP.Ea6UfOo8C0fd-BlM0H544AHaEK?w=229&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3?w=200&h=150&fit=crop" alt="Science Lab" class="gallery-img">
+                    <p>🔬 Science Lab</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://th.bing.com/th/id/OIP.QYEJ8FfqoJjoTX_iwCRskwHaE8?w=285&h=190&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3?w=200&h=150&fit=crop" alt="Library" class="gallery-img">
+                    <p>📚 Library</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://th.bing.com/th/id/OIP.qTDfZNMOCIBBfyE81kelzQHaE8?w=281&h=187&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3?w=200&h=150&fit=crop" alt="Computer Lab" class="gallery-img">
+                    <p>💻 Computer Lab</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://th.bing.com/th/id/OIP.wfpO77MDm7udPgjh7yp-qAHaE8?w=321&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3?w=200&h=150&fit=crop" alt="Playground" class="gallery-img">
+                    <p>⚽ Playground</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- Leadership Team -->
+        <h2 class="section-title">👨‍🏫 OUR LEADERSHIP TEAM</h2>
+        
+        <div class="director-section">
+            <div class="director-card">
+                <img src="C:\Users\hp\OneDrive\Documents\ankursir.jpeg" alt="Ankur Thummar" class="director-img">
+                <h3>ANKUR THUMMAR</h3>
+                <p>CAMPUS DIRECTOR</p>
+            </div>
+            <div class="director-card">
+                <img src="https://i.ytimg.com/vi/8vyexCl0xdI/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGHIgUSg3MA8=&rs=AOn4CLAWFly7Nellt8FkFNitrWuxmMFNkA" alt="Jatin Mehta" class="director-img">
+                <h3>JATIN MEHTA</h3>
+                <p>SCIENCE DIRECTOR</p>
+            </div>
+            <div class="director-card">
+                <img src="https://i.ytimg.com/vi/sXXybjgkEVc/oardefault.jpg" alt="Mehul Dholakiya" class="director-img">
+                <h3>MEHUL DHOLAKIYA</h3>
+                <p>EDUCATIONAL DIRECTOR</p>
+            </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="btn-links">
+            <a href="facaulty.html" class="btn">👥 VIEW OUR FACULTY</a>
+            <a href="academics.html" class="btn">📚 VIEW OUR ACADEMICS</a>
+        <a href="admission.html" class="btn">📝 ADMISSION</a>    
+	<a href="contact.html" class="btn">📞 CONTACT US</a>
+        </div>
+
+        <footer>
+            <hr>
+            <p>🏆 Vidhyaguru Science School | Nurturing Future Scientists</p>
+            <p style="margin-top: 10px;">📍 Rajkot, Gujarat | 📞 +91 98765 43210</p>
+        </footer>
+    </div>
+</body>
+</html>
