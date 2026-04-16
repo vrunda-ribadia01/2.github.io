@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vidhyaguru | Admission</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f5f0ff 0%, #e6ddfa 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 30px 20px;
+        }
+
+        .hero {
+            background: white;
+            border-radius: 40px;
+            padding: 40px;
+            text-align: center;
+            margin-bottom: 30px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .hero h1 {
+            color: #4A2E7A;
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            color: #6B5B95;
+            font-size: 1.1rem;
+        }
+
+        .form-card {
+            background: white;
+            border-radius: 30px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(74, 46, 122, 0.15);
+        }
+
+        .form-card h3 {
+            color: #4A2E7A;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 1.5rem;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            color: #4A2E7A;
+            margin-bottom: 8px;
+            font-size: 1rem;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="tel"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #ddd;
+            border-radius: 12px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            font-family: inherit;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            border-color: #4A2E7A;
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(74, 46, 122, 0.2);
+        }
+
+        .radio-group, .checkbox-group {
+            display: flex;
+            gap: 25px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .radio-group label, .checkbox-group label {
+            display: inline;
+            font-weight: normal;
+            margin-left: 5px;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .btn-submit {
+            background: #4A2E7A;
+            color: white;
+            border: none;
+            padding: 14px 40px;
+            border-radius: 40px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .btn-submit:hover {
+            background: #3a2362;
+            transform: scale(1.02);
+        }
+
+        .btn-reset {
+            background: #e0e0e0;
+            color: #4A2E7A;
+            border: none;
+            padding: 14px 40px;
+            border-radius: 40px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .btn-reset:hover {
+            background: #ccc;
+        }
+
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+
+        .nav-btn {
+            background: #4A2E7A;
+            color: white;
+            text-decoration: none;
+            padding: 12px 30px;
+            border-radius: 40px;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+
+        .nav-btn:hover {
+            background: #3a2362;
+            transform: scale(1.03);
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #5a4a7a;
+        }
+
+        hr {
+            margin: 20px 0;
+            border: 1px solid #d9cdf0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <h1>📝 Admission Open 2025-26</h1>
+            <p>Fill the form below to register for admission</p>
+        </div>
+
+        <div class="form-card">
+            <h3>✨ STUDENT ADMISSION FORM ✨</h3>
+            
+            <form action="thankyou.html" target="_blank">
+                <div class="form-group">
+                    <label>👤 FULL NAME :</label>
+                    <input type="text" name="name" required placeholder="Enter student's full name">
+                </div>
+
+                <div class="form-group">
+                    <label>⚧ GENDER :</label>
+                    <div class="radio-group">
+                        <input type="radio" name="gender" required> <label>MALE</label>
+                        <input type="radio" name="gender" required> <label>FEMALE</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>📅 DATE OF BIRTH :</label>
+                    <input type="date" name="dob" required>
+                </div>
+
+                <div class="form-group">
+                    <label>📖 APPLYING FOR CLASS :</label>
+                    <select name="class" required>
+                        <option value="">-- Select Class --</option>
+                        <option value="9">Class 9</option>
+                        <option value="10">Class 10</option>
+                        <option value="11">Class 11 (Science)</option>
+                        <option value="12">Class 12 (Science)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>🏫 PREVIOUS SCHOOL :</label>
+                    <input type="text" name="previous_school" placeholder="Enter previous school name">
+                </div>
+
+                <div class="form-group">
+                    <label>📞 PARENT / GUARDIAN PHONE :</label>
+                    <input type="tel" name="phone" pattern="[0-9]{10}" maxlength="10" required placeholder="10-digit mobile number">
+                </div>
+
+                <div class="form-group">
+                    <label>📧 EMAIL :</label>
+                    <input type="email" name="email" required placeholder="parent@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label>📍 ADDRESS :</label>
+                    <textarea name="address" rows="3" placeholder="Enter complete address"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>📚 BOARD PREFERENCE :</label>
+                    <div class="radio-group">
+                        <input type="radio" name="board"> <label>GSEB</label>
+                        <input type="radio" name="board"> <label>CBSE</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>🏅 EXTRA CURRICULAR INTERESTS :</label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" name="sports"> <label>Sports</label>
+                        <input type="checkbox" name="music"> <label>Music</label>
+                        <input type="checkbox" name="dance"> <label>Dance</label>
+                        <input type="checkbox" name="art"> <label>Art</label>
+                        <input type="checkbox" name="coding"> <label>Coding</label>
+                    </div>
+                </div>
+
+                <div class="btn-group">
+                    <input type="submit" value="SUBMIT APPLICATION" class="btn-submit">
+                    <input type="reset" value="RESET FORM" class="btn-reset">
+                </div>
+            </form>
+        </div>
+
+        <div class="nav-buttons">
+            <a href="index.html" class="nav-btn">🏠GO TO WELCOME</a>
+                  </div>
+
+        <footer>
+            <p>📞 For admission queries: +91 98765 43215 | ✉️ admission@vidhyaguru.edu.in</p>
+        </footer>
+    </div>
+</body>
+</html>
